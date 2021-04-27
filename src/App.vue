@@ -1,73 +1,42 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" />
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li>
-        <a href="https://chat.vuejs.org" target="_blank">Community Chat</a>
-      </li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li>
-        <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
-      </li>
-      <li>
-        <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-          >awesome-vue</a
-        >
-      </li>
-    </ul>
+    <todo-header></todo-header>
+    <todo-input></todo-input>
+    <todo-list></todo-list>
+    <todo-footer></todo-footer>
   </div>
 </template>
-
 <script>
-export default {
-  name: "app",
+import TodoFooterVue from "./components/TodoFooter.vue";
+import TodoHeaderVue from "./components/TodoHeader.vue";
+import TodoInputVue from "./components/TodoInput.vue";
+import TodoListVue from "./components/TodoList.vue";
 
-  data() {
-    return {
-      msg: "이얍",
-    };
+export default {
+  components: {
+    TodoHeader: TodoHeaderVue,
+    TodoInput: TodoInputVue,
+    TodoList: TodoListVue,
+    TodoFooter: TodoFooterVue,
   },
-  methods: {},
-  computed: {},
-  watch: {},
 };
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"); */
+body{
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #f6f6f8;
 }
-
-h1,
-h2 {
-  font-weight: normal;
+input{
+  border-style: groove;
+  width: 200px;
 }
-
-ul {
-  list-style-type: none;
-  padding: 0;
+button{
+  border-style: groove;
 }
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+.shadow{
+  box-shadow: 5px 10px 10px rgba(0,0,0,0.03);
 }
 </style>

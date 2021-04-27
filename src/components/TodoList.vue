@@ -1,5 +1,5 @@
 <template>
-    <div>list</div>
+    <div class="text-center margin-auto">list</div>
 </template>
 
 <script>
