@@ -25,18 +25,18 @@ export default {
 <style>
 /* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"); */
-body{
+body {
   text-align: center;
   background-color: #f6f6f8;
 }
-input{
+input {
   border-style: groove;
   width: 200px;
 }
-button{
+button {
   border-style: groove;
 }
-.shadow{
-  box-shadow: 5px 10px 10px rgba(0,0,0,0.03);
+.shadow {
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.03);
 }
 </style>
